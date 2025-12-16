@@ -36,7 +36,7 @@ scene.add(light)
 // LOAD MODEL
 const loader = new GLTFLoader()
 loader.load(
-  "./teeth2.glb",
+  "./tooth2.glb",
   (gltf) => {
     gltf.scene.traverse((child) => {
       if (child.isMesh) {
@@ -68,3 +68,4 @@ window.addEventListener("resize", () => {
   camera.updateProjectionMatrix()
   renderer.setSize(window.innerWidth, window.innerHeight)
 })
+
