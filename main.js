@@ -28,7 +28,7 @@ scene.add(dirLight)
 
 // LOAD MODEL
 const loader = new GLTFLoader()
-loader.load("./teeth.glb", (gltf) => {
+loader.load("./tooth2.glb", (gltf) => {
   gltf.scene.traverse((child) => {
     if (child.isMesh) {
       child.material = new THREE.MeshStandardMaterial({
@@ -56,4 +56,5 @@ window.addEventListener("resize", () => {
   camera.aspect = window.innerWidth / window.innerHeight
   camera.updateProjectionMatrix()
   renderer.setSize(window.innerWidth, window.innerHeight)
+
 })
